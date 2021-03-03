@@ -26,3 +26,13 @@
 - [plaidML](https://plaidml.github.io/plaidml/)
   - `pip install plaidml-keras==0.6.2`
   - `pip install mplfinance`
+
+
+
+## colab에서 실행해 보자
+- GPU 설정
+- !pip install tensorflow==1.15.2
+- !pip install mplfinance
+- settings.py : locale부분 주석처리
+- !python main.py --stock_code 005930 --rl_method a2c --net lstm --num_steps 5 --output_name c_005930 --learning --num_epoches 1000 --lr 0.001 --start_epsilon 1 --discount_factor 0.9
+
